@@ -1,0 +1,173 @@
+/* CSS for my Portfolio page */
+:root {
+    --Blue-Zodiac: #121E5A;
+    --Botticelli: #C6DEE7;
+
+}
+ * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} 
+/* Header */
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+/* Main section */
+body {
+    color: var(--Botticelli);
+    background-color: var(--Blue-Zodiac);
+}
+
+.banner {
+    height: 100px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/background1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.heading {
+    text-align: right;
+    width: 20%;
+    border-right : dodgerblue solid 2px;
+    padding: 10px;
+    display: inline-block;
+}
+
+img {
+    width: auto;
+    height: 50px;
+}
+
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: right;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    
+}
+
+section {
+    margin: 10px;
+}
+
+section p {
+    margin: 40px;
+}
+a:visited {
+    color: var(--Botticelli);
+}
+
+.row {
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+figure {
+    
+    height: 200px;
+    color: var(--Botticelli);
+    position: relative;
+}
+
+.block {
+    width: 79%;
+    height: fit-content;
+}
+
+.block ul {
+    list-style-type: none;
+    text-align: center;
+
+}
+
+.block ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.justify-right {
+    justify-content: right;
+}
+
+.appmain {
+    flex-basis: 600px;
+    height: 200px;
+    flex-grow: 2;
+    margin: 10px;
+    background-image: url("../images/tech-bg5-wide.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    position: relative;
+}
+
+.appmain:hover {
+    opacity: 1;
+}
+
+.appmain h3 {
+    color: floralwhite;
+}
+
+.app {
+    flex-basis: 300px;
+    margin: 10px;
+    background-image: url("../images/pattern-background1.jpg");
+    background-size: cover;
+    background-position: left;
+    border: green;
+    border-style: solid;
+    border-radius: 2px;
+    opacity: 0.8;
+}
+
+.app:hover {
+    opacity: 1;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    img {
+        width: auto;
+        height: 120px;
+  }
+}
+  
+  /* media query for larger screens */
+  @media screen and (min-width: 992px) {
+    img {
+        width: auto;
+        height: 180px;
+        float: inline-start;
+  }
+}
