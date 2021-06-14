@@ -3,7 +3,7 @@
 
 My Portfolio using CSS and HTML to diplay my contact details and displaying some sample web apps
 
-Click [here](https://scottyv6.github.io/super-duper-octo-system/) to see the website hosted on GitHub
+Click [here](https://scottyv6.github.io/SLV_Portfolio/) to see the website hosted on GitHub
 
 Image below
 
