@@ -117,7 +117,7 @@ figure {
     height: 200px;
     flex-grow: 2;
     margin: 10px;
-    background-image: url("../images/aurora.jpg");
+    background-image: url("../images/books2.jpg");
     background-size: cover;
     background-position: center;
     opacity: 0.8;
@@ -154,6 +154,10 @@ figure {
 
 #scheduleApp {
     background-image: url("../images/schedule.jpg");
+}
+
+#songApp {
+    background-image: url("../images/aurora.jpg");
 }
 
 .bottom-left {
